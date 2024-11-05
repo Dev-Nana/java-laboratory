@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="911.0" prefWidth="1303.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadeestoque.FXMLDocumentController">
+    <stylesheets>
+        <URL value="@test.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="911.0" prefWidth="461.0" style="-fx-background-color: #0A2a3e;">
+         <children>
+            <Text fill="WHITE" layoutX="25.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controle seu estoque de forma integrada a todas as etapas do seu negócio. Você acompanha as entradas e saídas, estoque mínimo e máximo e faz seu inventário de estoque." wrappingWidth="411.1953125">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="513.0" fitWidth="548.0" layoutX="14.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@homenzin.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="121.0" layoutY="813.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="219.0" style="-fx-background-color: #99bc29; -fx-background-radius: 50;" text="Experimente já!" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="25.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema de controle de estoque" wrappingWidth="333.0">
+               <font>
+                  <Font name="Alef Regular" size="31.0" />
+               </font>
+            </Text>
+         </children></Pane>
+      <Pane prefHeight="69.0" prefWidth="461.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="140.0" layoutX="170.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@vhsys.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="461.0" prefHeight="911.0" prefWidth="843.0" style="-fx-background-color: #0A2a3e;">
+         <children>
+            <Pane layoutX="118.0" layoutY="156.0" prefHeight="600.0" prefWidth="607.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <TextField fx:id="tf_email" layoutX="76.0" layoutY="162.0" prefHeight="40.0" prefWidth="454.0" promptText="Email">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_nome" layoutX="76.0" layoutY="221.0" prefHeight="40.0" prefWidth="454.0" promptText="Nome">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_celular" layoutX="76.0" layoutY="280.0" prefHeight="40.0" prefWidth="454.0" promptText="Celular">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_cpf" layoutX="77.0" layoutY="341.0" prefHeight="40.0" prefWidth="454.0" promptText="CPF">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_senha" layoutX="77.0" layoutY="398.0" prefHeight="40.0" prefWidth="454.0" promptText="Crie sua senha">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Button id="btnenviar" fx:id="btnenviar" layoutX="189.0" layoutY="489.0" mnemonicParsing="false" onAction="#enviar" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Confirmar" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="102.0" fitWidth="109.0" layoutX="53.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cadastro.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#196290" layoutX="170.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastre-se aqui" wrappingWidth="267.8876953125">
+                     <font>
+                        <Font name="Berlin Sans FB" size="38.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button id="btnenviar" fx:id="btnexcluir" layoutX="118.0" layoutY="817.0" mnemonicParsing="false" onAction="#excluir" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Retirar-se" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="btnenviar" fx:id="btnatualizar" layoutX="335.0" layoutY="817.0" mnemonicParsing="false" onAction="#atualizar" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Atualizar Conta" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button id="btnenviar" fx:id="btnconsulta" layoutX="551.0" layoutY="817.0" mnemonicParsing="false" onAction="#consultar" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Consultar Dados" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

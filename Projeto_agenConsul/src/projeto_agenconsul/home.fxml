@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1367.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_agenconsul.HomeController">
+    <stylesheets>
+        <URL value="@home.css" />
+    </stylesheets>
+   <children>
+      <TabPane layoutX="-2.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="765.0" prefWidth="1372.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cadastrar paciente">
+            <content>
+              <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="656.0" prefWidth="1696.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <ImageView fitHeight="496.0" fitWidth="490.0" layoutX="817.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/imgLtxt.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="53.0" layoutY="90.0" prefHeight="559.0" prefWidth="656.0" style="-fx-background-color: EBEBEB; -fx-background-radius: 55;">
+                           <children>
+                              <TextField fx:id="tf_nomeP" layoutX="57.0" layoutY="193.0" prefHeight="65.0" prefWidth="552.0" promptText="Insira seu nome " style="-fx-background-radius: 55;">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="29.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="tf_cpfP" layoutX="58.0" layoutY="274.0" prefHeight="65.0" prefWidth="550.0" promptText="Insira seu cpf" style="-fx-background-radius: 55;">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="29.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </TextField>
+                              <TextField fx:id="tf_tellP" layoutX="58.0" layoutY="352.0" prefHeight="65.0" prefWidth="550.0" promptText="Insira seu telefone" style="-fx-background-radius: 55;">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font name="Tw Cen MT" size="29.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </TextField>
+                              <Button id="button" fx:id="button" layoutX="426.0" layoutY="438.0" mnemonicParsing="false" onAction="#inserirButton" prefHeight="54.0" prefWidth="181.0" style="-fx-background-color: #0085FF; -fx-background-radius: 55;" text="Cadastrar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="28.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label fx:id="label" layoutX="114.0" layoutY="62.0" minHeight="16" minWidth="69" prefHeight="73.0" prefWidth="412.0" text="CADASTRO DE PACIENTE" textFill="#686868">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="39.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="82.0" layoutY="211.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="85.0" layoutY="371.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/phone.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="82.0" layoutY="291.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/cpf.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <effect>
+                              <DropShadow height="44.7" offsetX="5.0" offsetY="5.0" radius="20.200000000000003" width="38.1">
+                                 <color>
+                                    <Color opacity="0.2943722903728485" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Pane>
+                        <Pane layoutX="20.0" layoutY="7.0" prefHeight="5.0" prefWidth="79.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Cadastrar Médico">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="1166.0">
+                     <children>
+                        <Pane layoutX="131.0" layoutY="7.0" prefHeight="5.0" prefWidth="79.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                        <ImageView fitHeight="507.0" fitWidth="608.0" layoutX="706.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/undraw_medical_research_qg4d.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="59.0" layoutY="102.0" prefHeight="540.0" prefWidth="540.0" style="-fx-background-color: EBEBEB; -fx-background-radius: 55;">
+                           <children>
+                              <Button fx:id="btn_med" layoutX="313.0" layoutY="419.0" mnemonicParsing="false" onAction="#inserir_medico" prefHeight="49.0" prefWidth="180.0" style="-fx-background-color: #0085FF; -fx-background-radius: 55;" text="Cadastrar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="22.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <TextField fx:id="tf_espmed" layoutX="38.0" layoutY="335.0" prefHeight="49.0" prefWidth="456.0" promptText="Insira sua especialização" style="-fx-background-radius: 55;">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding></TextField>
+                              <TextField fx:id="tf_cpfmed" layoutX="38.0" layoutY="269.0" prefHeight="46.0" prefWidth="456.0" promptText="Insira seu CPF" style="-fx-background-radius: 55;">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding></TextField>
+                              <TextField fx:id="tf_nomemed" layoutX="38.0" layoutY="199.0" prefHeight="52.0" prefWidth="456.0" promptText="Insira seu nome" style="-fx-background-radius: 55;">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="75.0" />
+                                 </padding>
+                              </TextField>
+                              <Label fx:id="label1" layoutX="74.0" layoutY="58.0" minHeight="16" minWidth="69" prefHeight="73.0" prefWidth="382.0" text="CADASTRO DO MÉDICO" textFill="#666666">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="38.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="59.0" layoutY="210.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/user.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="61.0" layoutY="346.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/medic.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="30.0" fitWidth="42.0" layoutX="62.0" layoutY="277.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../fotos%20site/ICONS/cpf.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <effect>
+                              <DropShadow height="30.78" offsetX="5.0" offsetY="3.0" radius="17.4525" spread="0.39" width="41.03">
+                                 <color>
+                                    <Color opacity="0.13852813839912415" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Agendar Consulta">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="784.0" prefWidth="1372.0">
+                     <children>
+                        <Pane layoutX="235.0" layoutY="7.0" prefHeight="5.0" prefWidth="79.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                        <ImageView fitHeight="1131.0" fitWidth="1566.0" layoutX="390.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/undraw_doctor_kw5l.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="61.0" layoutY="128.0" text="AGENDAR CONSULTA" textFill="#59c1ff">
+                           <font>
+                              <Font name="Tw Cen MT" size="54.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_idp" layoutX="220.0" layoutY="256.0" prefHeight="41.0" prefWidth="327.0" promptText="Insira aqui um nome" style="-fx-background-radius: 55;">
+                           <font>
+                              <Font size="22.0" />
+                           </font></TextField>
+                        <TextField fx:id="tf_idm" layoutX="221.0" layoutY="327.0" prefHeight="41.0" prefWidth="328.0" promptText="Insira um médico" style="-fx-background-radius: 55;">
+                           <font>
+                              <Font size="22.0" />
+                           </font></TextField>
+                        <TextField fx:id="tf_data" layoutX="223.0" layoutY="480.0" prefHeight="46.0" prefWidth="159.0" promptText="dd/mm/aaaa" style="-fx-background-radius: 55;">
+                           <font>
+                              <Font size="22.0" />
+                           </font></TextField>
+                        <TextField fx:id="tf_hora" layoutX="223.0" layoutY="402.0" prefHeight="46.0" prefWidth="160.0" promptText="hh:mm" style="-fx-background-radius: 55;">
+                           <font>
+                              <Font size="22.0" />
+                           </font></TextField>
+                        <Label layoutX="85.0" layoutY="478.0" prefHeight="38.0" prefWidth="81.0" text="Data:" textFill="#757575">
+                           <font>
+                              <Font name="Tw Cen MT" size="31.0" />
+                           </font></Label>
+                        <Label layoutX="85.0" layoutY="407.0" prefHeight="38.0" prefWidth="81.0" text="Hora:" textFill="#757575">
+                           <font>
+                              <Font name="Tw Cen MT" size="31.0" />
+                           </font></Label>
+                        <Label layoutX="85.0" layoutY="256.0" prefHeight="38.0" prefWidth="115.0" text="paciente:" textFill="#757575">
+                           <font>
+                              <Font name="Tw Cen MT" size="31.0" />
+                           </font></Label>
+                        <Button fx:id="bt_cad" layoutX="359.0" layoutY="591.0" mnemonicParsing="false" onAction="#agendar_consulta" prefHeight="37.0" prefWidth="189.0" style="-fx-background-color: #0085FF; -fx-background-radius: 5;" text="Agendar" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT" size="29.0" />
+                           </font></Button>
+                        <Label layoutX="85.0" layoutY="326.0" prefHeight="38.0" prefWidth="111.0" text="médico:" textFill="#757575">
+                           <font>
+                              <Font name="Tw Cen MT" size="31.0" />
+                           </font></Label>
+                        <TableView id="table1" fx:id="tb_cpaciente" fixedCellSize="0.0" layoutX="654.0" layoutY="104.0" prefHeight="289.0" prefWidth="657.0" style="-fx-background-radius: 22; -fx-background-color: white; -fx-border-radius: 22;" stylesheets="@home.css">
+                          <columns>
+                            <TableColumn fx:id="cl_idpaciente" prefWidth="139.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="ID" />
+                            <TableColumn fx:id="cl_nomepaciente" minWidth="0.0" prefWidth="518.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Nome" />
+                          </columns>
+                           <padding>
+                              <Insets top="-1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <effect>
+                              <DropShadow height="56.05" offsetX="10.0" offsetY="10.0" radius="29.02" spread="0.18" width="62.03">
+                                 <color>
+                                    <Color red="0.013888888992369175" green="0.01868908293545246" blue="0.15789473056793213" opacity="0.20999999344348907" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TableView>
+                        <TableView id="table1" fx:id="tb_cmedico" fixedCellSize="0.0" layoutX="654.0" layoutY="421.0" prefHeight="279.0" prefWidth="657.0" style="-fx-background-radius: 22; -fx-background-color: white; -fx-border-radius: 22;" stylesheets="@home.css">
+                           <columns>
+                              <TableColumn fx:id="cl_idmedico" prefWidth="139.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="ID" />
+                              <TableColumn fx:id="cl_nomemedico" minWidth="0.0" prefWidth="518.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Nome" />
+                           </columns>
+                           <padding>
+                              <Insets top="-1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <effect>
+                              <DropShadow height="56.05" offsetX="10.0" offsetY="10.0" radius="29.02" spread="0.18" width="62.03">
+                                 <color>
+                                    <Color red="0.013888888992369175" green="0.01868908293545246" blue="0.15789473056793213" opacity="0.20999999344348907" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab text="Pacientes cadastrados">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="1035.0" fitWidth="1450.0" layoutX="783.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/undraw_medicine_b1ol%20(1).png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="354.0" layoutY="7.0" prefHeight="5.0" prefWidth="79.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                        <TableView fx:id="tb_paciente" layoutX="691.0" layoutY="144.0" prefHeight="467.0" prefWidth="646.0" style="-fx-background-radius: 33;">
+                          <columns>
+                              <TableColumn fx:id="cl_pcid" prefWidth="75.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="id" />
+                            <TableColumn fx:id="cl_nome" prefWidth="167.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Nome" />
+                            <TableColumn fx:id="cl_cpf" prefWidth="190.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="CPF" />
+                              <TableColumn fx:id="cl_tell" prefWidth="213.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Telefone" />
+                          </columns>
+                           <effect>
+                              <DropShadow height="38.59" offsetX="10.0" offsetY="10.0" radius="18.795" width="38.59">
+                                 <color>
+                                    <Color red="0.019999999552965164" green="0.054499998688697815" blue="0.25" opacity="0.411255419254303" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TableView>
+                        <Label layoutX="40.0" layoutY="45.0" prefHeight="105.0" prefWidth="329.0" text="Buscar Paciente:" textFill="#575757">
+                           <font>
+                              <Font name="Tw Cen MT" size="42.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_pcid" layoutX="42.0" layoutY="140.0" prefHeight="55.0" prefWidth="423.0" promptText="Insira o ID do paciente" style="-fx-background-radius: 55;">
+                           <padding>
+                              <Insets left="30.0" right="85.0" />
+                           </padding>
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="32.0" fitWidth="37.0" layoutX="414.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/ICONS/search.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="bt_buscar" layoutX="480.0" layoutY="141.0" mnemonicParsing="false" onAction="#busca_paciente" prefHeight="54.0" prefWidth="162.0" style="-fx-background-color: #0085FF; -fx-background-radius: 22;" text="Buscar">
+                           <font>
+                              <Font name="Tw Cen MT" size="27.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="41.0" layoutY="260.0" prefHeight="414.0" prefWidth="398.0" style="-fx-background-color: EBEBEB; -fx-background-radius: 30;">
+                           <children>
+                              <TextField fx:id="tf_nmp" layoutX="23.0" layoutY="62.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="tf_cpfpc" layoutX="24.0" layoutY="132.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="tf_telp" layoutX="24.0" layoutY="206.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btn_at" layoutX="24.0" layoutY="318.0" mnemonicParsing="false" onAction="#atualiza_paciente" prefHeight="49.0" prefWidth="155.0" style="-fx-background-radius: 55; -fx-background-color: #0085FF;" text="Atualizar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_ex" layoutX="208.0" layoutY="317.0" mnemonicParsing="false" onAction="#excluir_paciente" prefHeight="50.0" prefWidth="176.0" style="-fx-background-radius: 55; -fx-background-color: #0085FF;" text="Excluir" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Médicos cadastrados">
+               <content>
+                  <AnchorPane layoutX="1.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="477.0" layoutY="7.0" prefHeight="5.0" prefWidth="79.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                        <ImageView fitHeight="875.0" fitWidth="1245.0" layoutX="642.0" layoutY="293.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" rotate="-16.5">
+                           <image>
+                              <Image url="@../fotos%20site/undraw_doctor_kw5l.png" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="tb_medico" layoutX="701.0" layoutY="150.0" prefHeight="471.0" prefWidth="639.0" style="-fx-background-radius: 33;">
+                           <columns>
+                              <TableColumn fx:id="cl_idmd" prefWidth="60.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Id" />
+                              <TableColumn fx:id="cl_nomeme" prefWidth="187.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Nome" />
+                              <TableColumn fx:id="cl_cpfme" minWidth="0.0" prefWidth="186.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="CPF" />
+                              <TableColumn fx:id="cl_espm" prefWidth="205.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Especialização" />
+                           </columns>
+                           <effect>
+                              <DropShadow offsetX="10.0" offsetY="10.0" spread="0.06">
+                                 <color>
+                                    <Color red="0.016340000554919243" green="0.003800000064074993" blue="0.3799999952316284" opacity="0.5108225345611572" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TableView>
+                        <Label layoutX="44.0" layoutY="53.0" prefHeight="105.0" prefWidth="329.0" text="Buscar Médico:" textFill="#575757">
+                           <font>
+                              <Font name="Tw Cen MT" size="42.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_MDid" layoutX="46.0" layoutY="148.0" prefHeight="55.0" prefWidth="423.0" promptText="Insira o ID do médico" style="-fx-background-radius: 55;">
+                           <padding>
+                              <Insets left="30.0" right="85.0" />
+                           </padding>
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </TextField>
+                        <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="418.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/ICONS/search.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btn_buscarmd" layoutX="484.0" layoutY="149.0" mnemonicParsing="false" onAction="#busca_Medico" prefHeight="54.0" prefWidth="162.0" style="-fx-background-color: #0085FF; -fx-background-radius: 22;" text="Buscar">
+                           <font>
+                              <Font name="Tw Cen MT" size="27.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="45.0" layoutY="268.0" prefHeight="414.0" prefWidth="398.0" style="-fx-background-color: EBEBEB; -fx-background-radius: 30;">
+                           <children>
+                              <TextField fx:id="tf_nmMD" layoutX="23.0" layoutY="62.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="tf_cpfMD" layoutX="24.0" layoutY="132.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="tf_espcMD" layoutX="24.0" layoutY="206.0" prefHeight="51.0" prefWidth="357.0" style="-fx-background-radius: 22;">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="btn_at1" layoutX="24.0" layoutY="318.0" mnemonicParsing="false" onAction="#atualizar_medico" prefHeight="49.0" prefWidth="155.0" style="-fx-background-radius: 55; -fx-background-color: #0085FF;" text="Atualizar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btn_ex1" layoutX="208.0" layoutY="317.0" mnemonicParsing="false" onAction="#excluir_medico" prefHeight="50.0" prefWidth="176.0" style="-fx-background-radius: 55; -fx-background-color: #0085FF;" text="Excluir" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT" size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Consultas ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="542.0" fitWidth="666.0" layoutX="836.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../fotos%20site/Design%20sem%20nome%20(2).png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="86.0" layoutY="-1.0" prefHeight="293.0" prefWidth="1176.0" text="CONSULTAS" textFill="#6e6e6e47">
+                           <font>
+                              <Font name="Tw Cen MT" size="230.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="592.0" layoutY="7.0" prefHeight="4.0" prefWidth="51.0" style="-fx-background-color: blue; -fx-background-radius: 55;" />
+                        <TableView fx:id="tb_consultas" layoutX="249.0" layoutY="161.0" prefHeight="510.0" prefWidth="869.0" style="-fx-background-radius: 33;">
+                           <columns>
+                              <TableColumn fx:id="cl_idconsu" prefWidth="196.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="id_conulta" />
+                              <TableColumn fx:id="cl_dta" prefWidth="160.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Data" />
+                              <TableColumn fx:id="cl_horac" prefWidth="154.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="hora" />
+                              <TableColumn fx:id="cl_idmedc" prefWidth="171.0" style="-fx-background-color: #0085FF; -fx-font-size: 22;" text="Id_Medico" />
+                              <TableColumn fx:id="cl_idpacic" prefWidth="187.0" style="-fx-background-color: #0085FF; -fx-font-size: 22; -fx-backgroun-radius: 22;" text="Id_Paciente" />
+                           </columns>
+                           <effect>
+                              <DropShadow height="48.85" offsetX="10.0" offsetY="10.0" radius="25.0225" width="53.24">
+                                 <color>
+                                    <Color green="0.03333333507180214" blue="0.4000000059604645" opacity="0.42458873987197876" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TabPane>
+   </children>
+</AnchorPane>

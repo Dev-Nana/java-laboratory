@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchopane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="911.0" prefWidth="1303.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadeestoque.LoginController">
+   <children>
+      <Pane fx:id="pane" layoutX="847.0" prefHeight="911.0" prefWidth="462.0" style="-fx-background-color: white;">
+         <children>
+            <Pane fx:id="pane1" prefHeight="69.0" prefWidth="462.0" style="-fx-background-color: #0e2a3e;">
+               <children>
+                  <ImageView fx:id="vhsys" fitHeight="58.0" fitWidth="148.0" layoutX="170.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@vhsys2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fx:id="img" fitHeight="295.0" fitWidth="461.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@vindo.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="text1" fill="#0e2a3e" layoutX="21.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ganhe tempo com sistema de controle de estoque integrado." wrappingWidth="418.53515625000006">
+               <font>
+                  <Font name="Alef Regular" size="31.0" />
+               </font>
+            </Text>
+            <Text fx:id="text2" fill="#0e2a3e" layoutX="21.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abandone as planilhas e integre o seu controle de estoque a um sistema automatizado. Com o vhsys, você administra a entrada e saída de materiais, controla movimentações e relatórios de estoque de forma eficiente. " wrappingWidth="404.53515625">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" prefHeight="911.0" prefWidth="847.0" style="-fx-background-color: #0e2a3e;">
+         <children>
+            <Pane layoutX="120.0" layoutY="179.0" prefHeight="554.0" prefWidth="607.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+               <children>
+                  <TextField fx:id="tf_nome" layoutX="78.0" layoutY="193.0" prefHeight="45.0" prefWidth="455.0" promptText="Nome para estoque">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_quantidade" layoutX="77.0" layoutY="255.0" prefHeight="45.0" prefWidth="454.0" promptText="Quantidade máxima">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_categoria" layoutX="79.0" layoutY="320.0" prefHeight="45.0" prefWidth="454.0" promptText="Categoria">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tf_cpf" layoutX="79.0" layoutY="385.0" prefHeight="45.0" prefWidth="454.0" promptText="CPF">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <Button id="btnenviar" fx:id="btnenviar" layoutX="189.0" layoutY="471.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="36.0" prefWidth="230.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Confirmar" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="116.0" fitWidth="108.0" layoutX="62.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@estoque.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#196290" layoutX="189.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crie seu estoque" wrappingWidth="255.8876953125">
+                     <font>
+                        <Font name="Berlin Sans FB" size="38.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

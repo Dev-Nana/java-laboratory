@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchopane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="911.0" prefWidth="1303.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadeestoque.ProdutoController">
+   <children>
+      <TabPane layoutY="-2.0" prefHeight="913.0" prefWidth="1303.0" style="-fx-background-color: #0e2a3e;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Adicionar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="911.0" prefWidth="1303.0">
+                     <children>
+                        <Pane fx:id="pane" layoutY="30.0" prefHeight="858.0" prefWidth="462.0" style="-fx-background-color: #f8f8f8;">
+                           <children>
+                              <Pane fx:id="pane1" layoutX="-4.0" layoutY="-21.0" prefHeight="70.0" prefWidth="469.0" style="-fx-background-color: #0e2a3e;">
+                                 <children>
+                                    <ImageView fx:id="vhsys" fitHeight="58.0" fitWidth="148.0" layoutX="170.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@vhsys2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                              <ImageView fx:id="img" fitHeight="581.0" fitWidth="377.0" layoutX="42.0" layoutY="222.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@aten.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="text1" fill="#0e2a3e" layoutX="36.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atendemos à varios tipos de negócios!" wrappingWidth="389.53515625000006">
+                                 <font>
+                                    <Font name="Alef Regular" size="31.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane2" layoutX="462.0" layoutY="64.0" prefHeight="758.0" prefWidth="847.0" style="-fx-background-color: #0e2a3e;">
+                           <children>
+                              <Pane layoutX="120.0" layoutY="113.0" prefHeight="600.0" prefWidth="607.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                                 <children>
+                                    <TextField fx:id="tf_nome" layoutX="77.0" layoutY="174.0" prefHeight="40.0" prefWidth="454.0" promptText="Nome do produto">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tf_marca" layoutX="77.0" layoutY="242.0" prefHeight="40.0" prefWidth="454.0" promptText="Marca">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tf_fabricacao" layoutX="77.0" layoutY="314.0" prefHeight="40.0" prefWidth="454.0" promptText="Fabricação">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tf_valor" layoutX="77.0" layoutY="384.0" prefHeight="40.0" prefWidth="454.0" promptText="Valor">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button id="btnenviar" fx:id="btnenviar" layoutX="77.0" layoutY="479.0" mnemonicParsing="false" onAction="#confirmar" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Confirmar" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Text fill="#12619a" layoutX="171.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicione seus produtos" wrappingWidth="377.072265625">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="31.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="110.0" fitWidth="112.0" layoutX="40.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@produto.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button id="btnenviar" fx:id="btnenviar1" layoutX="342.0" layoutY="479.0" mnemonicParsing="false" onAction="#excluir" prefHeight="36.0" prefWidth="189.0" style="-fx-background-color: #99bc29; -fx-background-radius: 10;" text="Excluir" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Consultar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tb_produtos" layoutX="390.0" layoutY="234.0" prefHeight="414.0" prefWidth="523.0" style="-fx-font-family: serif;">
+                          <columns>
+                            <TableColumn fx:id="cl_idproduto" prefWidth="76.00006103515625" style="-fx-font-size: 22px;" text="ID" />
+                            <TableColumn fx:id="cl_nome" prefWidth="119.19998168945312" style="-fx-font-size: 22px;" text="Nome" />
+                              <TableColumn fx:id="cl_marca" prefWidth="107.19992065429688" style="-fx-font-size: 22px;" text="Marca" />
+                              <TableColumn fx:id="cl_fab" prefWidth="124.79998779296875" style="-fx-font-size: 22px;" text="Fabricação" />
+                              <TableColumn fx:id="cl_valor" prefWidth="94.4000122070313" style="-fx-font-size: 22px;" text="Valor" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
